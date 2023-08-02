@@ -50,7 +50,7 @@ p {
   font-size: 16px;
   color: #f7f0f0;
   max-width: 80%; /* Make the description wider */
-  margin: 10 auto; /* Center-align the description */
+  margin-top:20; /* Center-align the description */
 
   text-align: center;
 }
