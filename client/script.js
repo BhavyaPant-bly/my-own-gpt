@@ -65,7 +65,7 @@ function chatStripe(isAi, value, uniqueId) {
 
 const handleSubmit = async (e) => {
     e.preventDefault()
-    descriptionElement.style.display="none";
+    // descriptionElement.style.display="none";
     const data = new FormData(form)
 
     // user's chatstripe
