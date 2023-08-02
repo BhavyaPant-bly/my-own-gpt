@@ -42,12 +42,17 @@ body {
 h1 {
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center;
+  color: #f7f0f0;
 }
 
 p#description {
   font-size: 16px;
-  color: #555;
+  color: #f7f0f0;
   margin-bottom: 20px;
+  max-width: 80%; /* Make the description wider */
+  margin: 0 auto; /* Center-align the description */
+  text-align: center;
 }
 
 /* hides scrollbar */
