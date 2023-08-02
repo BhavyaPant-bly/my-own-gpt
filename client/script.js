@@ -3,6 +3,7 @@ import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
+const descriptionElement = document.getElementById("description");
 
 let loadInterval
 
@@ -64,7 +65,7 @@ function chatStripe(isAi, value, uniqueId) {
 
 const handleSubmit = async (e) => {
     e.preventDefault()
-
+    descriptionElement.style.display="none";
     const data = new FormData(form)
 
     // user's chatstripe
