@@ -40,14 +40,16 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 10px;
+  padding-top: 10px;
   text-align: center;
   color: #f7f0f0;
 }
 
 p {
-  font-size: 16px;
+  padding:10px;
+  font-size: 30px;
   color: #f7f0f0;
   max-width: 80%; /* Make the description wider */
   margin-top:20; /* Center-align the description */
