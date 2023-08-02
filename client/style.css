@@ -51,10 +51,9 @@ p {
   padding:10px;
   font-size: 30px;
   color: #f7f0f0;
-  max-width: 80%; /* Make the description wider */
-  margin-top:20; /* Center-align the description */
-
   text-align: center;
+  max-width: 80%; /* Make the description wider */
+  margin-top:0 auto; /* Center-align the description */
 }
 
 /* hides scrollbar */
