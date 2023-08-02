@@ -46,12 +46,12 @@ h1 {
   color: #f7f0f0;
 }
 
-p#description {
+p {
   font-size: 16px;
   color: #f7f0f0;
-  margin-bottom: 20px;
   max-width: 80%; /* Make the description wider */
-  margin: 0 auto; /* Center-align the description */
+  margin: 10 auto; /* Center-align the description */
+
   text-align: center;
 }
 
