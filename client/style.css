@@ -47,7 +47,7 @@ h1 {
   color: #f7f0f0;
 }
 
-p {
+p#description {
   /* padding:10px; */
   font-size: 30px;
   color: #f7f0f0;
