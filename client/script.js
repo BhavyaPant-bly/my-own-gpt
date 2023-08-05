@@ -3,7 +3,10 @@ import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
-const descriptionElement = document.getElementById("#desc");
+const Desc = document.querySelector('#Desc')
+const P = document.querySelector('p')
+
+const text="Codex is an advanced artificial intelligence designed to answer your questions and assist you in various tasks. Just type your query in the chatbox below, and Codex will provide you with helpful responses!"
 
 let loadInterval
 
@@ -65,7 +68,9 @@ function chatStripe(isAi, value, uniqueId) {
 
 const handleSubmit = async (e) => {
     e.preventDefault()
-    // descriptionElement.style.display="none";
+    Desc.style.display="none";
+   
+
     const data = new FormData(form)
 
     // user's chatstripe
@@ -120,3 +125,4 @@ form.addEventListener('keyup', (e) => {
         handleSubmit(e);
     }
 })
+P.addEventListener('onload',typeText(P,text))
