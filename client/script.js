@@ -1,10 +1,11 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
+
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
 const Desc = document.querySelector('#Desc')
-const P = document.querySelector('p')
+const P = document.getElementById('intro')
 
 const text="Codex is an advanced artificial intelligence designed to answer your questions and assist you in various tasks. Just type your query in the chatbox below, and Codex will provide you with helpful responses!"
 
@@ -103,14 +104,22 @@ const handleSubmit = async (e) => {
         })
     })
 
+
     clearInterval(loadInterval)
     messageDiv.innerHTML = " "
-
+    // console.log(response);
     if (response.ok) {
-        const data = await response.json();
-        const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
+        const resp = await response.json();
+        // console.log(resp.choices[0].text);
+        const parsedData = resp.bot.trim() // trims any trailing spaces/'\n' 
 
         typeText(messageDiv, parsedData);
+
+        // const pElement=document.createElement('p');
+        // pElement.textContent="";
+        // P.Element.addEventListener('click',()=> changeInput());
+        // historyElement.append(pElement);
+        
     } else {
         const err = await response.text();
 

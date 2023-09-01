@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <section class="side-bar">
+      <button id="chat">New Chat</button>
+      <div class="history"></div>
+      <nav>
+        <p>Made by Bhavya</p>
+      </nav>
+    </section>
+
+    <section class="main">
     <div id="app">
       <div id="Desc">
       <h1>Welcome to Codex!!</h1>
-      <p>
+      <p id="intro">
         
       </p>
     </div>
+  
       <div id="chat_container"></div>
 
       <form>
@@ -22,7 +33,7 @@
         <button type="submit"><img src="assets/send.svg" alt="send" />
       </form>
     </div>
-
+  </section>
     <script type="module" src="script.js"></script>
   </body>
 </html>
